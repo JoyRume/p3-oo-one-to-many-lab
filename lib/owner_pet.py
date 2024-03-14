@@ -41,20 +41,3 @@ class Owner:
         return sorted_pets
 
 
-
-# Example usage:
-
-# Create an owner
-owner = Owner("John")
-
-# Create some pets and assign them to the owner
-pet1 = Pet("Buddy", "dog", owner)
-pet2 = Pet("Fluffy", "cat", owner)
-pet3 = Pet("Spike", "dog", owner)
-
-# Get the list of pets for the owner
-print("Owner's pets:", [pet.name for pet in owner.pets()])
-
-# Sort the owner's pets by their names
-sorted_pets = owner.get_sorted_pets()
-print("Sorted pets:", [pet.name for pet in sorted_pets])
